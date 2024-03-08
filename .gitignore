@@ -1,0 +1,27 @@
+# Arquivos de compilação
+bin/
+obj/
+
+# Arquivos de dependências
+*.dll
+*.exe
+*.pdb
+
+# Arquivos gerados pelo Visual Studio
+.vs/
+*.vscode/
+
+# Arquivos de configuração do Docker
+.dockerignore
+docker-compose.override.yml
+
+# Arquivos temporários
+**/.vs/
+**/.vscode/
+**/*.suo
+**/*.user
+**/*.cache
+
+# Logs e arquivos temporários do Docker
+logs/
+*.log
