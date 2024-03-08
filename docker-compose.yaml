@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+    dotnet-api-optl-service:
+        image: dotnet-api-optl
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: dotnet-api-optl
+        ports:
+            - "5000:5000"
