@@ -9,3 +9,7 @@ services:
         container_name: dotnet-api-optl
         ports:
             - "5000:5000"
+        enviroment:
+            - OTEL_RESOURCE_ATTRIBUTES=service.name=dotnet-api-optl,deployment.environment=development,service.version=1.0.0
+            - OTEL_SERVICE_NAME=dotnet-api-optl
+            - OTEL_EXPORTER_OTLP_ENDPOINT=
